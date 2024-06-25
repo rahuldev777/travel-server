@@ -5,7 +5,7 @@ require("dotenv").config()
 
 const cors=require("cors")
 
-const router=require("./Router/router")
+const router=require("./Router/router.js")
 require("./DB/connection")
 const Razorpay=require("razorpay")
 
