@@ -1,10 +1,11 @@
 //load .env file content into the process.env by default
-
-require("dotenv").config()
 const express=require("express")
-const cors=require("cors")
 const TServer=express()
-const router=require("../Server/Router/router")
+require("dotenv").config()
+
+const cors=require("cors")
+
+const router=require("./Router/router")
 require("./DB/connection")
 const Razorpay=require("razorpay")
 
